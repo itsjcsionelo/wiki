@@ -1,8 +1,9 @@
 # Wikipedia
 
-#### This is a redesign of wikipedia, created for Betterteem℠ Front-end Software Engineer Assessment
-##### This is a project with a progress percentage of (80 / 100)
-##### Preview Link: wkpd.netlify.app
+This is a redesign of wikipedia, created for Betterteem℠ Front-end Software Engineer Assessment
+## This is a project with a progress percentage of (80 / 100)
+Preview Link: [Wikipedia](https://wkpd.netlify.app/)
+<br>
 
 ### This project consists of:
 
@@ -47,45 +48,27 @@
  </tr>
 </table>
 
-### Questions:
+## Questions:
 
-#### What are the unfinished percentage here in this project?
-##### 1.) I haven't connected it with 'Wikipedia API'
-##### 2.) From that, Details Page wheren't made
+### What are the unfinished percentage here in this project?
+1.) I haven't connected it with 'Wikipedia API'
+2.) From that, Details Page wheren't made
+<br>
+### Why isn't this not seperately branched?
+I encountered a lot of problems during commits and pulls, I sincerely apologize po sir
+<br>
+### What's the reason behind late submission?
+Due to the problems I encountered with branches, commits and pulls so I fixed it as soon as I can, again I sincerely apologize po
+<br>
 
-#### Why isn't this not seperately branched?
-##### I encountered a lot of problems during commits and pulls, I sincerely apologize po sir
-
-#### What's the reason behind late submission?
-##### Due to the problems I encountered with branches, commits and pulls so I fixed it as soon as I can, again I sincerely apologize po
-
-### Answer from Question #1
-##### Due to lack of time and late view of the given assessment, but I thrived and did my best po sir.
+## Answer from Question #1
+Due to lack of time and late view of the given assessment, but I thrived and did my best po sir.
 
 
 ## Overview: Screenshots
+Please look at the assets folder it is well organized from mobile, tablet to desktop
 
-### Home Page
-
-![./assets/img/Home/mobile.jpg](./assets/img/Home/mobile.jpg)![./assets/img/Home/tablet.jpg](./assets/img/Home/tablet.jpg)![./assets/img/Home/large-monitor.jpg](./assets/img/Home/large-monitor.jpg)![./assets/img/Home/extra-large-monitor.jpg](./assets/img/Home/extra-large-monitor.jpg)
-
-### Signin & Signup page
-
-![./assets/img/Signin/mobile.png](./assets/img/Signin/mobile.png)![./assets/img/Signup/mobile.png](./assets/img/Signup/mobile.png)![./assets/img/Signin/tablet.jpg](./assets/img/Signin/tablet.jpg)![./assets/img/Signin/large-monitor.jpg](./assets/img/Signin/large-monitor.jpg)![./assets/img/Signin/extra-large-monitor.jpg](./assets/img/Signin/extra-large-monitor.jpg)
-![./assets./img./Home Page./mobile.jpg](./assets./img./Home Page./mobile.jpg)
-![./assets./img./Home Page./tablet.jpg](./assets./img./Home Page./tablet.jpg)
-![./assets./img./Home Page./large-monitor.jpg](./assets./img./Home Page./large-monitor.jpg)
-![./assets./img./Home Page./extra-large-monitor.jpg](./assets./img./Home Page./extra-large-monitor.jpg)
-
-### Signin & Signup page
-
-![./assets./img./Signin Page./mobile.jpg](./assets./img./Signin Page./mobile.jpg)
-![./assets./img./Signup Page./mobile.jpg](./assets./img./Signup Page./mobile.jpg)
-![./assets./img./Signin Page./tablet.jpg](./assets./img./Signin Page./tablet.jpg)
-![./assets./img./Signin Page./large-monitor.jpg](./assets./img./Signin Page./large-monitor.jpg)
-![./assets./img./Signin Page./extra-large-monitor.jpg](./assets./img./Signin Page./extra-large-monitor.jpg)
-
-
+<br>
 # How to run locally?
 #### You can download the ZIP Folder and please strictly use 'Extract Here' and not anything else to avoid unwanted errors and complications. Then simply run the file and it'll go smoothly.
 
