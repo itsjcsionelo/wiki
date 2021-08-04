@@ -4,7 +4,8 @@ This is a redesign of wikipedia, created for Betterteem℠ Front-end Software En
 ## This is a project with a progress percentage of (80 / 100)
 Preview Link: [Wikipedia](https://wkpd.netlify.app/)
 <br>
-
+<br>
+<br>
 ### This project consists of:
 
 <table style="width: 100%; border: 0">
@@ -47,11 +48,13 @@ Preview Link: [Wikipedia](https://wkpd.netlify.app/)
     <td>✔ Clean Code</td>
  </tr>
 </table>
-
+<br>
+<br>
+<br>
 ## Questions:
 
 ### What are the unfinished percentage here in this project?
-1.) I haven't connected it with 'Wikipedia API'
+1.) I haven't connected it with 'Wikipedia API'<br>
 2.) From that, Details Page wheren't made
 <br>
 ### Why isn't this not seperately branched?
@@ -64,12 +67,15 @@ Due to the problems I encountered with branches, commits and pulls so I fixed it
 ## Answer from Question #1
 Due to lack of time and late view of the given assessment, but I thrived and did my best po sir.
 
-
-## Overview: Screenshots
-Please look at the assets folder it is well organized from mobile, tablet to desktop
-
 <br>
-# How to run locally?
+<br>
+<br>
+## Overview: Screenshots
+####Please look at the assets folder it is well organized from mobile, tablet to desktop
+<br>
+<br>
+<br>
+# How to run locally?<br>
 #### You can download the ZIP Folder and please strictly use 'Extract Here' and not anything else to avoid unwanted errors and complications. Then simply run the file and it'll go smoothly.
 
 
