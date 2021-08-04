@@ -5,7 +5,6 @@ This is a redesign of wikipedia, created for Betterteem℠ Front-end Software En
 Preview Link: [Wikipedia](https://wkpd.netlify.app/)
 <br>
 <br>
-<br>
 ### This project consists of:
 
 <table style="width: 100%; border: 0">
@@ -50,7 +49,6 @@ Preview Link: [Wikipedia](https://wkpd.netlify.app/)
 </table>
 <br>
 <br>
-<br>
 
 ## Questions:
 
@@ -70,13 +68,15 @@ Due to lack of time and late view of the given assessment, but I thrived and did
 
 <br>
 <br>
-<br>
+
 ## Overview: Screenshots
 ####Please look at the assets folder it is well organized from mobile, tablet to desktop
+
 <br>
 <br>
-<br>
+
 # How to run locally?<br>
+
 #### You can download the ZIP Folder and please strictly use 'Extract Here' and not anything else to avoid unwanted errors and complications. Then simply run the file and it'll go smoothly.
 
 
