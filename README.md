@@ -62,19 +62,14 @@ I encountered a lot of problems during commits and pulls, I sincerely apologize 
 ### What's the reason behind late submission?
 Due to the problems I encountered with branches, commits and pulls so I fixed it as soon as I can, again I sincerely apologize po
 <br>
-
 ## Answer from Question #1
 Due to lack of time and late view of the given assessment, but I thrived and did my best po sir.
-
 <br>
 <br>
-
 ## Overview: Screenshots
 ####Please look at the assets folder it is well organized from mobile, tablet to desktop
-
 <br>
 <br>
-
 # How to run locally?<br>
 
 #### You can download the ZIP Folder and please strictly use 'Extract Here' and not anything else to avoid unwanted errors and complications. Then simply run the file and it'll go smoothly.
