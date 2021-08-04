@@ -47,36 +47,24 @@ Preview Link: [Wikipedia](https://wkpd.netlify.app/)
     <td>✔ Clean Code</td>
  </tr>
 </table>
-<br>
-<br>
 
+<br>
+<br>
 ## Questions:
 
 ### What are the unfinished percentage here in this project?
 1.) I haven't connected it with 'Wikipedia API'<br>
 2.) From that, Details Page wheren't made
 <br>
+###### Due to lack of time and late view of the given assessment, <br>but I thrived and did my best po sir.
 ### Why isn't this not seperately branched?
-I encountered a lot of problems during commits and pulls, I sincerely apologize po sir
+I encountered a lot of problems during commits and pulls,<br>I sincerely apologize po sir
 <br>
 ### What's the reason behind late submission?
-Due to the problems I encountered with branches, commits and pulls so I fixed it as soon as I can, again I sincerely apologize po
-<br>
-## Answer from Question #1
-Due to lack of time and late view of the given assessment, but I thrived and did my best po sir.
-<br>
-<br>
-## Overview: Screenshots
-####Please look at the assets folder it is well organized from mobile, tablet to desktop
+Due to the problems I encountered with branches, commits and pulls<br>so I fixed it as soon as I can, again I sincerely apologize po
+
 <br>
 <br>
 # How to run locally?<br>
 
-#### You can download the ZIP Folder and please strictly use 'Extract Here' and not anything else to avoid unwanted errors and complications. Then simply run the file and it'll go smoothly.
-
-
-
-
-
-
-
+##### You can download the ZIP Folder and please strictly use 'Extract Here' to avoid unwanted errors and complications.<br><br>Then simply run the file and it'll go smoothly.
