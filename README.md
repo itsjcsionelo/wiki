@@ -7,7 +7,7 @@ Preview Link: [Wikipedia](https://wkpd.netlify.app/)
 <br>
 ### This project consists of:
 
-<table style="width: 100%; border: 0">
+<table>
   <tr>
     <td>✔ Landing Page</td>
     <td>✔ Animations / Transitions</td>
@@ -24,7 +24,10 @@ Preview Link: [Wikipedia](https://wkpd.netlify.app/)
     <td>✔ Fully Responsive</td>
     <td>✔ Icons</td>
   </tr>
-  <th colspan="2">✔ Sign Out</th>
+  <tr>
+    <td>✔ Sign Out</td>
+    <td>✔ Single Page Application</td>
+  </tr>
 </table>
 
 ### This project was built with:
