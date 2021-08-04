@@ -67,11 +67,11 @@
 
 ### Home Page
 
-![./assets./img./Home Page./mobile.jpg](./assets./img./Home Page./mobile.jpg)![./assets./img./Home Page./tablet.jpg](./assets./img./Home Page./tablet.jpg)![./assets./img./Home Page./large-monitor.jpg](./assets./img./Home Page./large-monitor.jpg)![./assets./img./Home Page./extra-large-monitor.jpg](./assets./img./Home Page./extra-large-monitor.jpg)
+![./assets/img/Home/mobile.jpg](./assets/img/Home/mobile.jpg)![./assets/img/Home/tablet.jpg](./assets/img/Home/tablet.jpg)![./assets/img/Home/large-monitor.jpg](./assets/img/Home/large-monitor.jpg)![./assets/img/Home/extra-large-monitor.jpg](./assets/img/Home/extra-large-monitor.jpg)
 
 ### Signin & Signup page
 
-![./assets./img./Signin Page./mobile.jpg](./assets./img./Signin Page./mobile.jpg)![./assets./img./Signup Page./mobile.jpg](./assets./img./Signup Page./mobile.jpg)![./assets./img./Signin Page./tablet.jpg](./assets./img./Signin Page./tablet.jpg)![./assets./img./Signin Page./large-monitor.jpg](./assets./img./Signin Page./large-monitor.jpg)![./assets./img./Signin Page./extra-large-monitor.jpg](./assets./img./Signin Page./extra-large-monitor.jpg)
+![./assets/img/Signin/mobile.png](./assets/img/Signin/mobile.png)![./assets/img/Signup/mobile.png](./assets/img/Signup/mobile.png)![./assets/img/Signin/tablet.jpg](./assets/img/Signin/tablet.jpg)![./assets/img/Signin/large-monitor.jpg](./assets/img/Signin/large-monitor.jpg)![./assets/img/Signin/extra-large-monitor.jpg](./assets/img/Signin/extra-large-monitor.jpg)
 
 
 # How to run locally?
