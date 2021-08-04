@@ -47,9 +47,9 @@ Preview Link: [Wikipedia](https://wkpd.netlify.app/)
     <td>✔ Clean Code</td>
  </tr>
 </table>
+<br>
+<br>
 
-<br>
-<br>
 ## Questions:
 
 ### What are the unfinished percentage here in this project?
@@ -62,9 +62,9 @@ I encountered a lot of problems during commits and pulls,<br>I sincerely apologi
 <br>
 ### What's the reason behind late submission?
 Due to the problems I encountered with branches, commits and pulls<br>so I fixed it as soon as I can, again I sincerely apologize po
+<br>
+<br>
 
-<br>
-<br>
 # How to run locally?<br>
 
 ##### You can download the ZIP Folder and please strictly use 'Extract Here' to avoid unwanted errors and complications.<br><br>Then simply run the file and it'll go smoothly.
