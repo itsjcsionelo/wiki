@@ -1,0 +1,75 @@
+.app {
+    display: grid;
+    grid-template-rows: 6rem 4rem 30vh;
+    background-color: white;
+    overflow: hidden !important;
+
+    &--logo {
+        grid-row: 1;
+    }
+
+    &--user {
+        grid-row: 2;
+    }
+
+    &--hero {
+        grid-row: 3;
+    }
+
+    &--search {
+        grid-row: 4;
+    }
+
+    &--auth {
+        grid-row: 4;
+    }
+
+    &--message {
+        position: absolute;
+        width: 100%;
+        top: 10rem;
+        transition: all .2s;
+        text-align: center;
+        font-weight: 600;
+        font-size: 1.3rem;
+        padding: .5rem;
+        color: white;
+        animation: fade 300ms linear 1;
+
+        @include medium {
+            display: none;
+        }
+    }
+
+    .success {
+        background-color: c(success);
+    }
+
+    .fail {
+        background-color: c(fail);
+    }
+
+    @include medium {
+        grid-template-columns: 5rem clamp(15.5rem, 19vmin, 20rem) 11rem 1fr;
+        grid-template-rows: clamp(3rem, 4vmin, 5rem) 6rem 10rem 4rem 1fr;
+        min-height: 100vh;
+    }
+
+    @include large {
+        grid-template-columns: 6rem clamp(15.5rem, 19vmin, 20rem) auto 1fr;
+        grid-template-rows: 3rem 8rem 10rem 1fr;
+        min-height: 80vh;
+        min-width: 80vw;
+        border: solid .1rem c(secondary);
+        box-shadow: 0 1rem 5rem c(secondary);
+    }
+}
+
+@include large {
+    body {
+        background: linear-gradient(to bottom right, white, c(secondary-var));
+        display: grid;
+        place-content: center;
+        overflow: hidden;
+    }
+}

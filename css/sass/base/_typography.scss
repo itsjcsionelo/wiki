@@ -1,0 +1,272 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    line-height: 2;
+    font-family: 'Open Sans', sans-serif;
+    font-size: clamp(1.6rem, 2.5vmin, 1.8rem);
+
+    h1 {
+        font-size: clamp(2.8rem, 5vmin, 6rem);
+    }
+
+    h2 {
+        font-size: clamp(2.4rem, 4vmin, 5.2rem);
+    }
+
+    h3 {
+        font-size: clamp(1.92rem, 3.5vmin, 4.8rem);
+    }
+
+    h4 {
+        font-size: clamp(1.76rem, 3vmin, 4.4rem);
+    }
+
+    h5 {
+        font-size: clamp(1.6rem, 2.5vmin, 3.92rem);
+    }
+
+    div,
+    button,
+    span,
+    applet,
+    object,
+    iframe,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    input,
+    textarea,
+    select,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+        font: inherit;
+        color: inherit;
+        text-decoration: inherit;
+    }
+
+    a:not([class]) {
+        text-decoration-skip-ink: auto;
+    }
+
+    /////////////////////
+    //USER
+
+    .app--user {
+
+        &-status span {
+            font-weight: 600;
+            color: c(primary);
+            font-family: 'Poppins';
+        }
+
+        &-auth,
+        &-auth-out {
+            font-weight: 600;
+        }
+
+        &-auth-alt {
+
+            @include medium {
+                color: c(border);
+
+                &:hover {
+                    color: c(primary);
+                }
+            }
+        }
+
+        &-auth-out-alt {
+
+            @include medium {
+                color: c(border);
+
+                &:hover {
+                    color: c(primary);
+                }
+            }
+        }
+    }
+
+    /////////////////////
+    //HERO
+
+    .app--hero {
+        color: c(secondary);
+
+        &--design,
+        &--desc {
+
+            @include medium {
+                font-family: 'Poppins';
+                font-weight: 500;
+                text-transform: uppercase;
+                text-align: center;
+            }
+        }
+
+        &--design {
+            letter-spacing: .5rem;
+        }
+
+        &--desc {
+            color: c(border);
+            letter-spacing: .2rem;
+        }
+
+        &--welcome {
+            font-family: 'Playfair Display';
+            letter-spacing: .1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            text-align: left;
+            line-height: 2.5;
+            font-size: clamp(2rem, 2vmin, 2.5rem);
+
+            @include medium {
+                font-size: clamp(2.8rem, 5vmin, 6rem);
+                text-align: center;
+            }
+
+            span {
+                font-weight: 700;
+
+                @include medium {
+                    text-align: center;
+                }
+            }
+        }
+
+        &__img--quote span {
+            font-weight: 700;
+            letter-spacing: .1rem;
+        }
+    }
+
+    /////////////////////
+    //SEARCH
+
+    .app--search {
+
+        &-bar {
+            text-transform: capitalize;
+
+            @include medium {
+                font-size: 1.4rem;
+            }
+
+            &-suggestions {
+
+                @include medium {
+                    font-size: clamp(1rem, 1.3vmin, 1.4rem);
+                }
+
+                li {
+                    font-weight: 600;
+                    color: c(primary);
+                }
+            }
+        }
+
+        &-btn {
+            color: c(secondary-var);
+
+            &:hover {
+                color: c(primary);
+            }
+        }
+    }
+
+    /////////////////////
+    //AUTH
+
+    .app--auth {
+        &-about {
+            ::selection {
+                color: white;
+            }
+
+            @include medium {
+                font-family: 'Playfair Display', serif;
+                text-align: right;
+                font-weight: 500;
+
+                h1 {
+                    font-style: italic;
+                    text-transform: capitalize;
+                    font-weight: 600;
+                    color: c(primary);
+                }
+            }
+
+            span {
+                color: c(primary);
+            }
+        }
+    }
+}

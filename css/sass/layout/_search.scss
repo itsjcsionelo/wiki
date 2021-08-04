@@ -1,0 +1,104 @@
+.app--search {
+    padding-top: 2rem;
+    display: grid;
+    place-content: center;
+    animation: fade 300ms linear 1;
+
+    @include medium {
+        grid-row: 4 / -1;
+        grid-column: 2 / 4;
+        z-index: 1;
+        place-content: start;
+        padding: 0;
+        display: grid !important;
+        grid-template-rows: 4rem 1fr;
+        grid-template-columns: 15.5rem clamp(6rem, 15vmin, 11rem);
+        position: relative;
+    }
+
+    &-bar {
+        min-width: 100%;
+        border: none;
+        background: c(secondary);
+        place-self: center;
+        position: relative;
+        padding: .5rem 2rem;
+        padding-right: 7rem;
+        transform: scale(.8);
+        border: solid .05rem #f3eeee;
+
+        @include medium {
+            grid-column: 1 / 3;
+            transform: scale(1);
+            justify-self: start;
+            align-self: end;
+            position: static;
+            margin-bottom: clamp(-2rem, -3vmin, -3rem);
+        }
+
+        &::selection {
+            color: c(secondary);
+        }
+
+        &::placeholder {
+            color: c(secondary-var);
+        }
+
+        &:focus {
+            outline: none;
+        }
+
+        &-suggestions {
+            transform: scale(.8);
+
+            @include medium {
+                transform: scale(1);
+                margin-top: 6rem;
+                margin-left: .2rem;
+            }
+
+            @include large {
+                margin-top: 6rem;
+            }
+
+            &::selection {
+                background: none;
+            }
+
+            li {
+                margin-bottom: .1rem;
+                cursor: pointer;
+                display: inline-block;
+                vertical-align: top;
+                padding-right: 1rem;
+
+                @include medium {
+                    display: block;
+                }
+
+                &::selection {
+                    background: none;
+                }
+            }
+        }
+    }
+
+    &-btn {
+        cursor: pointer;
+        position: absolute;
+        margin: 1.3rem 0;
+        margin-left: 2rem;
+        right: 15%;
+        transition: all .2s;
+
+        @include small {
+            right: 13%;
+        }
+
+        @include medium {
+            position: absolute;
+            top: 1.8rem;
+            right: 1rem;
+        }
+    }
+}

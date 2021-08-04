@@ -1,0 +1,116 @@
+.app--hero {
+    position: relative;
+    cursor: default;
+
+    &--design,
+    &--desc {
+        display: none;
+
+        &::selection {
+            background: none;
+        }
+
+        @include medium {
+            z-index: 1;
+            display: inline-block;
+        }
+    }
+
+    &--design {
+        margin-bottom: -4rem;
+        border-left: solid .4rem c(primary);
+        border-right: solid .4rem c(primary);
+        padding: 0 2rem;
+        place-self: center;
+        transform: scale(.5);
+    }
+
+    &--desc {
+        margin-top: -.5rem;
+        transform: scale(.7);
+    }
+
+    &--welcome {
+        transform: scale(.5);
+        position: absolute;
+        bottom: .5rem;
+        left: -1rem;
+
+        @include medium {
+            position: static;
+            transform: scale(.6);
+        }
+
+        span {
+            position: relative;
+            left: 15rem;
+            transform: scale(3);
+            display: block;
+
+            @include medium {
+                left: 0;
+                transform: scale(2.8);
+            }
+
+            &::selection {
+                background: none;
+            }
+        }
+
+        &::selection {
+            background: none;
+        }
+    }
+
+    &__img {
+        height: 100%;
+        min-width: 100%;
+        object-fit: cover;
+        object-position: bottom;
+        filter: brightness(30%);
+        position: absolute;
+        background: c(accent);
+
+        @include medium {
+            height: 100vh;
+            min-width: 100%;
+        }
+
+        &::selection {
+            background: none;
+        }
+
+        &--quote {
+            position: absolute;
+            top: 0;
+            left: -5.2rem;
+            transform: scale(.5);
+
+            @include medium {
+                transform: scale(.7);
+                top: 2rem;
+                left: -2rem;
+            }
+
+            &::selection {
+                background: none;
+            }
+
+            span {
+
+                &::selection {
+                    background: none;
+                }
+            }
+        }
+    }
+
+    @include medium {
+        grid-row: 1 / -1;
+        grid-column: 3 / -1;
+        overflow: hidden;
+        display: grid;
+        place-content: center;
+        position: relative;
+    }
+}

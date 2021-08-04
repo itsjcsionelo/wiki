@@ -1,0 +1,1279 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css);
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+button,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+img,
+picture,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  -webkit-tap-highlight-color: transparent;
+}
+body ::-moz-selection {
+  background: #faf6f6;
+}
+body ::selection {
+  background: #faf6f6;
+}
+body img,
+body picture {
+  max-width: 100%;
+}
+body ul,
+body ol {
+  list-style: none;
+}
+body blockquote,
+body q {
+  quotes: none;
+}
+body blockquote:before,
+body blockquote:after,
+body q:before,
+body q:after {
+  content: "";
+  content: none;
+}
+body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+*::before,
+*::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 2;
+  font-family: "Open Sans", sans-serif;
+  font-size: clamp(1.6rem, 2.5vmin, 1.8rem);
+}
+body h1 {
+  font-size: clamp(2.8rem, 5vmin, 6rem);
+}
+body h2 {
+  font-size: clamp(2.4rem, 4vmin, 5.2rem);
+}
+body h3 {
+  font-size: clamp(1.92rem, 3.5vmin, 4.8rem);
+}
+body h4 {
+  font-size: clamp(1.76rem, 3vmin, 4.4rem);
+}
+body h5 {
+  font-size: clamp(1.6rem, 2.5vmin, 3.92rem);
+}
+body div,
+body button,
+body span,
+body applet,
+body object,
+body iframe,
+body h6,
+body p,
+body blockquote,
+body pre,
+body a,
+body abbr,
+body acronym,
+body address,
+body big,
+body cite,
+body code,
+body del,
+body dfn,
+body em,
+body img,
+body ins,
+body kbd,
+body q,
+body s,
+body samp,
+body small,
+body strike,
+body strong,
+body sub,
+body sup,
+body tt,
+body var,
+body b,
+body u,
+body i,
+body center,
+body dl,
+body dt,
+body dd,
+body ol,
+body ul,
+body li,
+body fieldset,
+body form,
+body label,
+body legend,
+body table,
+body caption,
+body tbody,
+body tfoot,
+body thead,
+body tr,
+body th,
+body td,
+body article,
+body aside,
+body canvas,
+body details,
+body embed,
+body figure,
+body figcaption,
+body footer,
+body header,
+body hgroup,
+body menu,
+body nav,
+body output,
+body ruby,
+body section,
+body input,
+body textarea,
+body select,
+body summary,
+body time,
+body mark,
+body audio,
+body video {
+  font: inherit;
+  color: inherit;
+  text-decoration: inherit;
+}
+body a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+body .app--user-status span {
+  font-weight: 600;
+  color: #dd4a32;
+  font-family: "Poppins";
+}
+body .app--user-auth, body .app--user-auth-out {
+  font-weight: 600;
+}
+@media (min-width: 768px) {
+  body .app--user-auth-alt {
+    color: #f3eeee;
+  }
+  body .app--user-auth-alt:hover {
+    color: #dd4a32;
+  }
+}
+@media (min-width: 768px) {
+  body .app--user-auth-out-alt {
+    color: #f3eeee;
+  }
+  body .app--user-auth-out-alt:hover {
+    color: #dd4a32;
+  }
+}
+body .app--hero {
+  color: #faf6f6;
+}
+@media (min-width: 768px) {
+  body .app--hero--design, body .app--hero--desc {
+    font-family: "Poppins";
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+body .app--hero--design {
+  letter-spacing: 0.5rem;
+}
+body .app--hero--desc {
+  color: #f3eeee;
+  letter-spacing: 0.2rem;
+}
+body .app--hero--welcome {
+  font-family: "Playfair Display";
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: left;
+  line-height: 2.5;
+  font-size: clamp(2rem, 2vmin, 2.5rem);
+}
+@media (min-width: 768px) {
+  body .app--hero--welcome {
+    font-size: clamp(2.8rem, 5vmin, 6rem);
+    text-align: center;
+  }
+}
+body .app--hero--welcome span {
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  body .app--hero--welcome span {
+    text-align: center;
+  }
+}
+body .app--hero__img--quote span {
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+body .app--search-bar {
+  text-transform: capitalize;
+}
+@media (min-width: 768px) {
+  body .app--search-bar {
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 768px) {
+  body .app--search-bar-suggestions {
+    font-size: clamp(1rem, 1.3vmin, 1.4rem);
+  }
+}
+body .app--search-bar-suggestions li {
+  font-weight: 600;
+  color: #dd4a32;
+}
+body .app--search-btn {
+  color: #a4a4a4;
+}
+body .app--search-btn:hover {
+  color: #dd4a32;
+}
+body .app--auth-about ::-moz-selection {
+  color: white;
+}
+body .app--auth-about ::selection {
+  color: white;
+}
+@media (min-width: 768px) {
+  body .app--auth-about {
+    font-family: "Playfair Display", serif;
+    text-align: right;
+    font-weight: 500;
+  }
+  body .app--auth-about h1 {
+    font-style: italic;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #dd4a32;
+  }
+}
+body .app--auth-about span {
+  color: #dd4a32;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.app {
+  display: grid;
+  grid-template-rows: 6rem 4rem 30vh;
+  background-color: white;
+  overflow: hidden !important;
+}
+.app--logo {
+  grid-row: 1;
+}
+.app--user {
+  grid-row: 2;
+}
+.app--hero {
+  grid-row: 3;
+}
+.app--search {
+  grid-row: 4;
+}
+.app--auth {
+  grid-row: 4;
+}
+.app--message {
+  position: absolute;
+  width: 100%;
+  top: 10rem;
+  transition: all 0.2s;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.3rem;
+  padding: 0.5rem;
+  color: white;
+  -webkit-animation: fade 300ms linear 1;
+          animation: fade 300ms linear 1;
+}
+@media (min-width: 768px) {
+  .app--message {
+    display: none;
+  }
+}
+.app .success {
+  background-color: #6bb96b;
+}
+.app .fail {
+  background-color: #a75151;
+}
+@media (min-width: 768px) {
+  .app {
+    grid-template-columns: 5rem clamp(15.5rem, 19vmin, 20rem) 11rem 1fr;
+    grid-template-rows: clamp(3rem, 4vmin, 5rem) 6rem 10rem 4rem 1fr;
+    min-height: 100vh;
+  }
+}
+@media (min-width: 992px) {
+  .app {
+    grid-template-columns: 6rem clamp(15.5rem, 19vmin, 20rem) auto 1fr;
+    grid-template-rows: 3rem 8rem 10rem 1fr;
+    min-height: 80vh;
+    min-width: 80vw;
+    border: solid 0.1rem #faf6f6;
+    box-shadow: 0 1rem 5rem #faf6f6;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    background: linear-gradient(to bottom right, white, #a4a4a4);
+    display: grid;
+    place-content: center;
+    overflow: hidden;
+  }
+}
+.app--auth {
+  display: none;
+  -webkit-animation: fade 300ms linear 1;
+          animation: fade 300ms linear 1;
+}
+@media (min-width: 768px) {
+  .app--auth {
+    background: linear-gradient(to bottom right, white, #a4a4a4);
+    position: absolute;
+    overflow: hidden !important;
+    inset: 0;
+    left: 20.5rem;
+    border-left: solid 0.1rem #faf6f6;
+  }
+}
+@media (min-width: 992px) {
+  .app--auth {
+    transform: scale(0.8);
+    left: 24rem;
+    right: 2.8rem;
+  }
+}
+@media (min-width: 1600px) {
+  .app--auth {
+    left: 29rem;
+  }
+}
+.app--auth-about {
+  display: none;
+}
+@media (min-width: 768px) {
+  .app--auth-about {
+    display: block;
+    place-self: center;
+    width: 90%;
+    margin-left: 15vw;
+    margin-bottom: 25vh;
+    transform: scale(0.8);
+    border-right: solid 0.3rem rgba(221, 73, 50, 0.5);
+    padding-right: 4rem;
+  }
+  .app--auth-about h1 {
+    margin-bottom: 1rem;
+    opacity: 0.6;
+  }
+}
+@media (min-width: 768px) and (min-width: 992px) {
+  .app--auth-about h1 {
+    transform: scale(1);
+  }
+}
+@media (min-width: 768px) {
+  .app--auth-about h5 {
+    opacity: 0.5;
+  }
+}
+@media (min-width: 768px) and (min-width: 992px) {
+  .app--auth-about h5 {
+    padding-left: 20%;
+  }
+}
+.app--auth-about ::-moz-selection {
+  background: #dd4a32;
+}
+.app--auth-about ::selection {
+  background: #dd4a32;
+}
+.app--auth-message {
+  display: none !important;
+  position: absolute;
+  width: 100%;
+  top: 9rem;
+  transition: all 0.2s;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.3rem;
+  padding: 0.5rem;
+  color: white;
+  -webkit-animation: fade 300ms linear 1;
+          animation: fade 300ms linear 1;
+  z-index: 10;
+}
+@media (min-width: 768px) {
+  .app--auth-message {
+    display: block !important;
+  }
+}
+.app--auth-signin {
+  display: grid;
+  place-content: center;
+  padding: 2rem 0;
+  padding-left: 2rem;
+  position: relative;
+}
+.app--auth-signin p {
+  color: #a4a4a4;
+  transform: scale(0.8);
+  cursor: default;
+  text-align: right;
+}
+.app--auth-signin p button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #dd4a32;
+  font-weight: 600;
+}
+.app--auth-signin p button:focus {
+  outline: none;
+}
+@media (min-width: 576px) {
+  .app--auth-signin p {
+    display: none;
+  }
+}
+@media (min-width: 576px) {
+  .app--auth-signin {
+    display: flex !important;
+  }
+}
+@media (min-width: 768px) {
+  .app--auth-signin {
+    position: absolute;
+    right: 0;
+    left: 0;
+    backdrop-filter: blur(0px) saturate(0%);
+    -webkit-backdrop-filter: blur(0px) saturate(0%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid white;
+  }
+}
+.app--auth-signup {
+  display: none;
+  place-content: center;
+  padding: 2rem 0;
+  padding-left: 2rem;
+  position: relative;
+}
+@media (min-width: 576px) {
+  .app--auth-signup {
+    display: grid !important;
+    place-content: start;
+    margin-left: 8vw;
+    padding-top: 4rem;
+  }
+}
+@media (min-width: 768px) {
+  .app--auth-signup {
+    display: flex !important;
+    position: absolute;
+    margin: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(0px) saturate(0%);
+    -webkit-backdrop-filter: blur(0px) saturate(0%);
+    background-color: rgba(255, 255, 255, 0.6);
+    border-top: 1px solid white;
+  }
+}
+.app--auth-signup hr {
+  display: none;
+}
+@media (min-width: 576px) {
+  .app--auth-signup hr {
+    display: block;
+    width: 30rem;
+    position: relative;
+    bottom: 3.1rem;
+    border: none;
+    border-top: solid 0.1rem #f3eeee;
+    left: 1%;
+  }
+}
+@media (min-width: 768px) {
+  .app--auth-signup hr {
+    display: none;
+  }
+}
+.app--auth-signup p {
+  text-align: right;
+  color: #a4a4a4;
+  transform: scale(0.8);
+  cursor: default;
+}
+.app--auth-signup p::-moz-selection {
+  background: none;
+}
+.app--auth-signup p::selection {
+  background: none;
+}
+.app--auth-signup p button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #dd4a32;
+  font-weight: 600;
+}
+.app--auth-signup p button:focus {
+  outline: none;
+}
+@media (min-width: 576px) {
+  .app--auth-signup p {
+    display: none;
+  }
+}
+.app--auth-signup form {
+  display: grid;
+}
+@media (min-width: 768px) {
+  .app--auth-signup form {
+    place-self: center !important;
+  }
+}
+.app--auth-signup-requirements {
+  display: none;
+  position: absolute;
+  padding: 2rem;
+  top: -2.5rem;
+  right: 20vw;
+  border: solid 0.1rem #f3eeee;
+  transform: scale(0.8);
+  background: #65696f;
+  -webkit-animation: fade 300ms linear 1;
+          animation: fade 300ms linear 1;
+}
+@media (min-width: 576px) {
+  .app--auth-signup-requirements {
+    display: inline-block !important;
+    top: 7rem;
+    background: none;
+    border: none;
+    left: 30%;
+    right: -150%;
+  }
+}
+@media (min-width: 768px) {
+  .app--auth-signup-requirements {
+    position: static;
+  }
+}
+.app--auth-signup-requirements::after {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #65696f;
+  position: absolute;
+  right: 3rem;
+  bottom: -1.8rem;
+  transform: scale(3);
+}
+@media (min-width: 576px) {
+  .app--auth-signup-requirements::after {
+    display: none;
+  }
+}
+.app--auth-signup-requirements::-moz-selection {
+  background: none;
+}
+.app--auth-signup-requirements::selection {
+  background: none;
+}
+.app--auth-signup-requirements li {
+  position: relative;
+  margin-bottom: 0.1rem;
+  cursor: default;
+  color: white;
+}
+@media (min-width: 576px) {
+  .app--auth-signup-requirements li {
+    color: #dd4a32;
+    font-weight: 600;
+  }
+}
+.app--auth-signup-requirements li::-moz-selection {
+  background: none;
+}
+.app--auth-signup-requirements li::selection {
+  background: none;
+}
+.app--auth-signup-requirements p {
+  display: none;
+}
+@media (min-width: 576px) {
+  .app--auth-signup-requirements p {
+    display: block;
+    position: absolute;
+    top: -2rem;
+    left: 2rem;
+    color: #a4a4a4;
+    font-family: "Poppins";
+    font-weight: 500;
+    transform: scale(1);
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+  }
+}
+@media (min-width: 768px) {
+  .app--auth-signup-requirements p {
+    position: static;
+    padding-bottom: 2rem;
+  }
+}
+.app--auth input {
+  border: none;
+  background: #faf6f6;
+  padding: 0.5rem 0;
+  padding-left: 2rem;
+  padding-right: 15vw;
+  border: solid 0.05rem #f3eeee;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+@media (min-width: 576px) {
+  .app--auth input {
+    padding-right: 10vw;
+  }
+}
+@media (min-width: 768px) {
+  .app--auth input {
+    padding-right: 8vw;
+    border-color: white;
+  }
+}
+.app--auth input::-moz-selection {
+  background: #dd4a32;
+  color: #faf6f6;
+}
+.app--auth input::selection {
+  background: #dd4a32;
+  color: #faf6f6;
+}
+.app--auth input::-moz-placeholder {
+  color: #a4a4a4;
+}
+.app--auth input:-ms-input-placeholder {
+  color: #a4a4a4;
+}
+.app--auth input::placeholder {
+  color: #a4a4a4;
+}
+.app--auth input:focus {
+  outline: none;
+}
+.app--auth [class$=user] {
+  display: inline-block;
+}
+.app--auth [class$=user]::after {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #a4a4a4;
+  position: relative;
+  right: 4rem;
+}
+.app--auth [class$=user]::-moz-selection {
+  background: none;
+}
+.app--auth [class$=user]::selection {
+  background: none;
+}
+.app--auth [class$=email] {
+  display: inline-block;
+}
+.app--auth [class$=email]::after {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #a4a4a4;
+  position: relative;
+  right: 4rem;
+}
+.app--auth [class$=email]::-moz-selection {
+  background: none;
+}
+.app--auth [class$=email]::selection {
+  background: none;
+}
+.app--auth [class$=pass] {
+  display: inline-block;
+}
+.app--auth [class$=pass]::after {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #a4a4a4;
+  position: relative;
+  right: 4rem;
+}
+.app--auth [class$=pass]::-moz-selection {
+  background: none;
+}
+.app--auth [class$=pass]::selection {
+  background: none;
+}
+
+.app--logo {
+  place-self: center;
+}
+.app--logo-img {
+  height: 3rem;
+  cursor: pointer;
+}
+.app--logo-img::-moz-selection {
+  background: none;
+}
+.app--logo-img::selection {
+  background: none;
+}
+@media (min-width: 768px) {
+  .app--logo-img {
+    height: 4rem;
+    margin-top: -1rem;
+  }
+}
+@media (min-width: 992px) {
+  .app--logo-img {
+    height: clamp(5rem, 6vmin, 7rem);
+  }
+}
+@media (min-width: 768px) {
+  .app--logo {
+    grid-row: 2;
+    grid-column: 2;
+    justify-self: start;
+  }
+}
+
+.app--user {
+  background: #faf6f6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  padding-right: 2rem;
+  position: relative;
+}
+.app--user-status {
+  transform: scale(0.8);
+  cursor: default;
+}
+@media (min-width: 768px) {
+  .app--user-status {
+    margin-left: -0.5rem;
+    border-right: solid 0.05rem #faf6f6;
+    padding-right: 15%;
+  }
+}
+@media (min-width: 992px) {
+  .app--user-status {
+    font-size: clamp(1.5rem, 1.9vmin, 2rem);
+  }
+}
+.app--user-status::-moz-selection {
+  background: none;
+}
+.app--user-status::selection {
+  background: none;
+}
+.app--user-status span::-moz-selection {
+  background: none;
+}
+.app--user-status span::selection {
+  background: none;
+}
+@media (min-width: 768px) {
+  .app--user-status span {
+    display: block;
+    margin-top: -0.5rem;
+  }
+}
+.app--user-auth, .app--user-auth-out {
+  cursor: pointer;
+  transform: scale(0.8);
+}
+.app--user-auth::-moz-selection, .app--user-auth-out::-moz-selection {
+  background: none;
+}
+.app--user-auth::selection, .app--user-auth-out::selection {
+  background: none;
+}
+@media (min-width: 768px) {
+  .app--user-auth, .app--user-auth-out {
+    display: none !important;
+    margin-left: -0.5rem;
+  }
+}
+.app--user-auth {
+  display: block;
+}
+.app--user-auth-alt {
+  display: none;
+}
+@media (min-width: 768px) {
+  .app--user-auth-alt {
+    display: block;
+    margin-left: 1%;
+    cursor: pointer;
+    transition: all 0.2s;
+    padding: 0.5rem;
+  }
+}
+.app--user-auth-out {
+  display: none;
+}
+@media (min-width: 768px) {
+  .app--user-auth-out {
+    display: none !important;
+  }
+}
+.app--user-auth-out-alt {
+  display: none;
+}
+@media (min-width: 768px) {
+  .app--user-auth-out-alt {
+    display: block;
+    margin-left: 1%;
+    cursor: pointer;
+    transition: all 0.2s;
+    padding: 0.5rem;
+  }
+}
+.app--user-auth-search {
+  display: none;
+  margin-left: 1%;
+  cursor: pointer;
+  transition: all 0.2s;
+  padding: 0.5rem;
+}
+@media (min-width: 768px) {
+  .app--user-auth-search {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) {
+  .app--user {
+    grid-row: 3;
+    grid-column: 2;
+    background: transparent;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+  }
+}
+
+.app--hero {
+  position: relative;
+  cursor: default;
+}
+.app--hero--design, .app--hero--desc {
+  display: none;
+}
+.app--hero--design::-moz-selection, .app--hero--desc::-moz-selection {
+  background: none;
+}
+.app--hero--design::selection, .app--hero--desc::selection {
+  background: none;
+}
+@media (min-width: 768px) {
+  .app--hero--design, .app--hero--desc {
+    z-index: 1;
+    display: inline-block;
+  }
+}
+.app--hero--design {
+  margin-bottom: -4rem;
+  border-left: solid 0.4rem #dd4a32;
+  border-right: solid 0.4rem #dd4a32;
+  padding: 0 2rem;
+  place-self: center;
+  transform: scale(0.5);
+}
+.app--hero--desc {
+  margin-top: -0.5rem;
+  transform: scale(0.7);
+}
+.app--hero--welcome {
+  transform: scale(0.5);
+  position: absolute;
+  bottom: 0.5rem;
+  left: -1rem;
+}
+@media (min-width: 768px) {
+  .app--hero--welcome {
+    position: static;
+    transform: scale(0.6);
+  }
+}
+.app--hero--welcome span {
+  position: relative;
+  left: 15rem;
+  transform: scale(3);
+  display: block;
+}
+@media (min-width: 768px) {
+  .app--hero--welcome span {
+    left: 0;
+    transform: scale(2.8);
+  }
+}
+.app--hero--welcome span::-moz-selection {
+  background: none;
+}
+.app--hero--welcome span::selection {
+  background: none;
+}
+.app--hero--welcome::-moz-selection {
+  background: none;
+}
+.app--hero--welcome::selection {
+  background: none;
+}
+.app--hero__img {
+  height: 100%;
+  min-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+  filter: brightness(30%);
+  position: absolute;
+  background: #65696f;
+}
+@media (min-width: 768px) {
+  .app--hero__img {
+    height: 100vh;
+    min-width: 100%;
+  }
+}
+.app--hero__img::-moz-selection {
+  background: none;
+}
+.app--hero__img::selection {
+  background: none;
+}
+.app--hero__img--quote {
+  position: absolute;
+  top: 0;
+  left: -5.2rem;
+  transform: scale(0.5);
+}
+@media (min-width: 768px) {
+  .app--hero__img--quote {
+    transform: scale(0.7);
+    top: 2rem;
+    left: -2rem;
+  }
+}
+.app--hero__img--quote::-moz-selection {
+  background: none;
+}
+.app--hero__img--quote::selection {
+  background: none;
+}
+.app--hero__img--quote span::-moz-selection {
+  background: none;
+}
+.app--hero__img--quote span::selection {
+  background: none;
+}
+@media (min-width: 768px) {
+  .app--hero {
+    grid-row: 1/-1;
+    grid-column: 3/-1;
+    overflow: hidden;
+    display: grid;
+    place-content: center;
+    position: relative;
+  }
+}
+
+.app--search {
+  padding-top: 2rem;
+  display: grid;
+  place-content: center;
+  -webkit-animation: fade 300ms linear 1;
+          animation: fade 300ms linear 1;
+}
+@media (min-width: 768px) {
+  .app--search {
+    grid-row: 4/-1;
+    grid-column: 2/4;
+    z-index: 1;
+    place-content: start;
+    padding: 0;
+    display: grid !important;
+    grid-template-rows: 4rem 1fr;
+    grid-template-columns: 15.5rem clamp(6rem, 15vmin, 11rem);
+    position: relative;
+  }
+}
+.app--search-bar {
+  min-width: 100%;
+  border: none;
+  background: #faf6f6;
+  place-self: center;
+  position: relative;
+  padding: 0.5rem 2rem;
+  padding-right: 7rem;
+  transform: scale(0.8);
+  border: solid 0.05rem #f3eeee;
+}
+@media (min-width: 768px) {
+  .app--search-bar {
+    grid-column: 1/3;
+    transform: scale(1);
+    justify-self: start;
+    align-self: end;
+    position: static;
+    margin-bottom: clamp(-2rem, -3vmin, -3rem);
+  }
+}
+.app--search-bar::-moz-selection {
+  color: #faf6f6;
+}
+.app--search-bar::selection {
+  color: #faf6f6;
+}
+.app--search-bar::-moz-placeholder {
+  color: #a4a4a4;
+}
+.app--search-bar:-ms-input-placeholder {
+  color: #a4a4a4;
+}
+.app--search-bar::placeholder {
+  color: #a4a4a4;
+}
+.app--search-bar:focus {
+  outline: none;
+}
+.app--search-bar-suggestions {
+  transform: scale(0.8);
+}
+@media (min-width: 768px) {
+  .app--search-bar-suggestions {
+    transform: scale(1);
+    margin-top: 6rem;
+    margin-left: 0.2rem;
+  }
+}
+@media (min-width: 992px) {
+  .app--search-bar-suggestions {
+    margin-top: 6rem;
+  }
+}
+.app--search-bar-suggestions::-moz-selection {
+  background: none;
+}
+.app--search-bar-suggestions::selection {
+  background: none;
+}
+.app--search-bar-suggestions li {
+  margin-bottom: 0.1rem;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 1rem;
+}
+@media (min-width: 768px) {
+  .app--search-bar-suggestions li {
+    display: block;
+  }
+}
+.app--search-bar-suggestions li::-moz-selection {
+  background: none;
+}
+.app--search-bar-suggestions li::selection {
+  background: none;
+}
+.app--search-btn {
+  cursor: pointer;
+  position: absolute;
+  margin: 1.3rem 0;
+  margin-left: 2rem;
+  right: 15%;
+  transition: all 0.2s;
+}
+@media (min-width: 576px) {
+  .app--search-btn {
+    right: 13%;
+  }
+}
+@media (min-width: 768px) {
+  .app--search-btn {
+    position: absolute;
+    top: 1.8rem;
+    right: 1rem;
+  }
+}

@@ -1,0 +1,112 @@
+.app--user {
+    background: c(secondary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    padding-right: 2rem;
+    position: relative;
+
+    &-status {
+        transform: scale(.8);
+        cursor: default;
+
+        @include medium {
+            margin-left: -.5rem;
+            border-right: solid .05rem c(secondary);
+            padding-right: 15%;
+        }
+
+        @include large {
+            font-size: clamp(1.5rem, 1.9vmin, 2rem);
+        }
+
+        &::selection {
+            background: none;
+        }
+
+        span {
+
+            &::selection {
+                background: none;
+            }
+
+            @include medium {
+                display: block;
+                margin-top: -.5rem;
+            }
+        }
+    }
+
+    &-auth,
+    &-auth-out {
+        cursor: pointer;
+        transform: scale(.8);
+
+        &::selection {
+            background: none;
+        }
+
+        @include medium {
+            display: none !important;
+            margin-left: -.5rem;
+        }
+    }
+
+    &-auth {
+        display: block;
+    }
+
+    &-auth-alt {
+        display: none;
+
+        @include medium {
+            display: block;
+            margin-left: 1%;
+            cursor: pointer;
+            transition: all .2s;
+            padding: .5rem;
+        }
+    }
+
+    &-auth-out {
+        display: none;
+
+        @include medium {
+            display: none !important;
+        }
+    }
+
+    &-auth-out-alt {
+        display: none;
+
+        @include medium {
+            display: block;
+            margin-left: 1%;
+            cursor: pointer;
+            transition: all .2s;
+            padding: .5rem;
+        }
+    }
+
+    &-auth-search {
+        display: none;
+        margin-left: 1%;
+        cursor: pointer;
+        transition: all .2s;
+        padding: .5rem;
+
+        @include medium {
+            display: none !important;
+        }
+    }
+
+    @include medium {
+        grid-row: 3;
+        grid-column: 2;
+        background: transparent;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0;
+    }
+}

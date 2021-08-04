@@ -1,0 +1,27 @@
+.app--logo {
+    place-self: center;
+
+    &-img {
+        height: 3rem;
+        cursor: pointer;
+
+        &::selection {
+            background: none;
+        }
+
+        @include medium {
+            height: 4rem;
+            margin-top: -1rem;
+        }
+
+        @include large {
+            height: clamp(5rem, 6vmin, 7rem);
+        }
+    }
+
+    @include medium {
+        grid-row: 2;
+        grid-column: 2;
+        justify-self: start;
+    }
+}

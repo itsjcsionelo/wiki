@@ -1,0 +1,375 @@
+.app--auth {
+    display: none;
+    animation: fade 300ms linear 1;
+
+    @include medium {
+        background:
+            linear-gradient(to bottom right, white, c(secondary-var));
+        position: absolute;
+        overflow: hidden !important;
+        inset: 0;
+        left: 20.5rem;
+        border-left: solid .1rem c(secondary);
+    }
+
+    @include large {
+        transform: scale(.8);
+        left: 24rem;
+        right: 2.8rem;
+    }
+
+    @include extra-large {
+        left: 29rem;
+    }
+
+    &-about {
+        display: none;
+
+        @include medium {
+            display: block;
+            place-self: center;
+            width: 90%;
+            margin-left: 15vw;
+            margin-bottom: 25vh;
+            transform: scale(.8);
+            border-right: solid .3rem rgba(221, 73, 50, 0.5);
+            padding-right: 4rem;
+
+            h1 {
+                margin-bottom: 1rem;
+                opacity: .6;
+
+                @include large {
+                    transform: scale(1);
+                }
+            }
+
+            h5 {
+                opacity: .5;
+
+                @include large {
+                    padding-left: 20%;
+                }
+            }
+        }
+
+        ::selection {
+            background: c(primary);
+        }
+    }
+
+    &-message {
+        display: none !important;
+        position: absolute;
+        width: 100%;
+        top: 9rem;
+        transition: all .2s;
+        text-align: center;
+        font-weight: 600;
+        font-size: 1.3rem;
+        padding: .5rem;
+        color: white;
+        animation: fade 300ms linear 1;
+        z-index: 10;
+
+        @include medium {
+            display: block !important;
+        }
+    }
+
+    &-signin {
+        display: grid;
+        place-content: center;
+        padding: 2rem 0;
+        padding-left: 2rem;
+        position: relative;
+
+        p {
+            color: c(secondary-var);
+            transform: scale(.8);
+            cursor: default;
+            text-align: right;
+
+            button {
+                border: none;
+                background: none;
+                cursor: pointer;
+                color: c(primary);
+                font-weight: 600;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            @include small {
+                display: none;
+            }
+        }
+
+        @include small {
+            display: flex !important;
+        }
+
+        @include medium {
+            position: absolute;
+            right: 0;
+            left: 0;
+
+            backdrop-filter: blur(0px) saturate(0%);
+            -webkit-backdrop-filter: blur(0px) saturate(0%);
+            background-color: rgba(255, 255, 255, 0.5);
+            border-bottom: 1px solid white;
+        }
+    }
+
+    &-signup {
+        display: none;
+        place-content: center;
+        padding: 2rem 0;
+        padding-left: 2rem;
+        position: relative;
+
+        @include small {
+            display: grid !important;
+            place-content: start;
+            margin-left: 8vw;
+            padding-top: 4rem;
+        }
+
+        @include medium {
+            display: flex !important;
+            position: absolute;
+            margin: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+
+            backdrop-filter: blur(0px) saturate(0%);
+            -webkit-backdrop-filter: blur(0px) saturate(0%);
+            background-color: rgba(255, 255, 255, 0.6);
+            border-top: 1px solid white;
+        }
+
+        hr {
+            display: none;
+
+            @include small {
+                display: block;
+                width: 30rem;
+                position: relative;
+                bottom: 3.1rem;
+                border: none;
+                border-top: solid .1rem c(border);
+                left: 1%;
+            }
+
+            @include medium {
+                display: none;
+            }
+        }
+
+        p {
+            text-align: right;
+            color: c(secondary-var);
+            transform: scale(.8);
+            cursor: default;
+
+            &::selection {
+                background: none;
+            }
+
+            button {
+                border: none;
+                background: none;
+                cursor: pointer;
+                color: c(primary);
+                font-weight: 600;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            @include small {
+                display: none;
+            }
+        }
+
+        form {
+            display: grid;
+
+            @include medium {
+                place-self: center !important;
+            }
+        }
+
+        &-requirements {
+            display: none;
+            position: absolute;
+            padding: 2rem;
+            top: -2.5rem;
+            right: 20vw;
+            border: solid .1rem c(border);
+            transform: scale(.8);
+            background: c(accent);
+            animation: fade 300ms linear 1;
+
+            @include small {
+                display: inline-block !important;
+                top: 7rem;
+                background: none;
+                border: none;
+                left: 30%;
+                right: -150%;
+            }
+
+            @include medium {
+                position: static;
+            }
+
+            &::after {
+                content: "\f0d7";
+                font-family: 'Font Awesome 5 Free';
+                font-weight: 900;
+                color: c(accent);
+                position: absolute;
+                right: 3rem;
+                bottom: -1.8rem;
+                transform: scale(3);
+
+                @include small {
+                    display: none;
+                }
+            }
+
+            &::selection {
+                background: none;
+            }
+
+            li {
+                position: relative;
+                margin-bottom: .1rem;
+                cursor: default;
+                color: white;
+
+                @include small {
+                    color: c(primary);
+                    font-weight: 600;
+                }
+
+                &::selection {
+                    background: none;
+                }
+            }
+
+            p {
+                display: none;
+
+                @include small {
+                    display: block;
+                    position: absolute;
+                    top: -2rem;
+                    left: 2rem;
+                    color: c(secondary-var);
+                    font-family: 'Poppins';
+                    font-weight: 500;
+                    transform: scale(1);
+                    letter-spacing: .1rem;
+                    text-transform: uppercase;
+                }
+
+                @include medium {
+                    position: static;
+                    padding-bottom: 2rem;
+                }
+            }
+        }
+    }
+
+    input {
+        border: none;
+        background: c(secondary);
+        padding: .5rem 0;
+        padding-left: 2rem;
+        padding-right: 15vw;
+        border: solid .05rem #f3eeee;
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+
+        @include small {
+            padding-right: 10vw;
+        }
+
+        @include medium {
+            padding-right: 8vw;
+            border-color: white;
+        }
+
+        &::selection {
+            background: c(primary);
+            color: c(secondary);
+        }
+
+        &::placeholder {
+            color: c(secondary-var);
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    [class$="user"] {
+        display: inline-block;
+
+        &::after {
+            content: "\f007";
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            color: c(secondary-var);
+            position: relative;
+            right: 4rem;
+        }
+
+        &::selection {
+            background: none;
+        }
+    }
+
+    [class$="email"] {
+        display: inline-block;
+
+        &::after {
+            content: "\f0e0";
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            color: c(secondary-var);
+            position: relative;
+            right: 4rem;
+        }
+
+        &::selection {
+            background: none;
+        }
+    }
+
+    [class$="pass"] {
+        display: inline-block;
+
+        &::after {
+            content: "\f023";
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            color: c(secondary-var);
+            position: relative;
+            right: 4rem;
+        }
+
+        &::selection {
+            background: none;
+        }
+    }
+}

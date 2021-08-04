@@ -1,0 +1,15 @@
+@import './abstracts/variables';
+@import './abstracts/functions';
+@import './abstracts/mixins';
+@import './base/reset';
+@import './base/typography';
+@import './base/animations';
+@import './pages/home';
+@import './layout/auth';
+@import './layout/logo';
+@import './layout/user';
+@import './layout/hero';
+@import './layout/search';
+
+@include fonts;
+@include icons;

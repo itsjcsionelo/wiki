@@ -1,0 +1,19 @@
+$colors: (
+    primary: #dd4a32,
+    secondary: #faf6f6,
+    secondary-var: #a4a4a4,
+    accent: #65696f,
+
+    success: rgb(107, 185, 107),
+    fail: rgb(167, 81, 81),
+
+    text: #333540,
+    border: #f3eeee,
+);
+
+$breakpoints: (
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1600px,
+);
